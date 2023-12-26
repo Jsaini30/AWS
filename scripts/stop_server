@@ -1,6 +1,7 @@
 #!/bin/bash
-isExistApp=$(pgrep apache2)
+
+isExistApp=$(pgrep nginx)
 
 if [[ -n $isExistApp ]]; then
-    sudo service apache2 stop
+    sudo service nginx stop
 fi
